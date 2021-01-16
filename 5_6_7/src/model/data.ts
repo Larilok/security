@@ -1,7 +1,7 @@
 import { verifyUser } from '../auth/auth'
 import { IData, IUserCredentials } from '../types'
 import { getUserData, setUserData } from '../db/queries'
-import { encrypt, decrypt } from '../secure/secure'
+import { encrypt, decrypt } from '../secure/cipher'
 
 export const setData = async (userCredentialsAndData: IUserCredentials & IData) => {
   const user = await verifyUser(userCredentialsAndData)
