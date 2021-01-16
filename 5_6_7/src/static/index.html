@@ -1,0 +1,23 @@
+<head>
+  <script type="text/javascript" src="index.js" defer> </script>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+  <div>
+    <h1>Auth</h1>
+    <label>Login: </label><input type="text" id="login-input" />
+    <label>Password: </label><input type="password" id="password-input" />
+    <button onclick="signIn()">Sign In</button>
+    <button onclick="signUp()">Sign Up</button>
+  </div>
+  <div>
+    <h1>Data</h1>
+    <label>Field: </label><input type="text" id="field-input" />
+    <label>Value: </label><input type="text" id="value-input" />
+    <button onclick="setData()">Set data</button>
+    <button onclick="getData()">Get data</button>
+  </div> 
+
+  <div id="output"></div>
+</body>
