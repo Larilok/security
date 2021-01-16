@@ -4,7 +4,7 @@ dotenv.config()
 
 const { DATABASE, USERNAME, PASSWORD, HOST } = process.env
 
-console.log(USERNAME)
+
 module.exports = {
   client: 'pg',
   connection: {
