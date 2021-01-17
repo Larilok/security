@@ -7,7 +7,7 @@ export interface IUser {
   id?: number
   login: string,
   password: string,
-  salt: string
+  version: number
 }
 
 export interface IData {
