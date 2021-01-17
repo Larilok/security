@@ -1,14 +1,14 @@
 'use strict'
 
-const fs = require('fs')
+import fs from 'fs'
 
 const h1 = fs.readFileSync('./hashes/md5.json', 'utf8')
 const h2 = fs.readFileSync('./hashes/sha1Salt.json', 'utf8')
 const h3 = fs.readFileSync('./hashes/scrypt.json', 'utf8')
 
-const strToCSV = (string) => {
+const strToCSV = (string: string) => {
     let arr = string.split('},')
-    arr = arr.map(el => {
+    arr = arr.map((el: any) => {
         el = el.split(',')
         el[0] = el[0].split(':')[1].slice(1, -1)
         if(el[1]) el[1] = el[1].split(':')[1].slice(1, -1)
